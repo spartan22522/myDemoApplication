@@ -1,0 +1,8 @@
+*** Variables ***
+${var1}           5
+${var2}           5
+${getPeace}       //h1[contains(text(),'Fly with peace...')]
+
+*** Keywords ***
+compareTwoVariables
+    Should Be Equal As Integers    ${var1}    ${var2}
