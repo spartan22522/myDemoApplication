@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200629 12:58:08.110" generator="Robot 3.2.1 (Python 2.7.10 on win32)">
+<suite source="E:\Robot Framework\New_Demo_Project\NewProject\DemoSuiteNew.robot" id="s1" name="DemoSuiteNew">
+<test id="s1-t1" name="TC_01">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://ngendigital.com/practice</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200629 12:58:08.706" level="INFO">Opening browser 'Chrome' to base url 'https://ngendigital.com/practice'</msg>
+<status status="PASS" endtime="20200629 12:58:15.588" starttime="20200629 12:58:08.705"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200629 12:58:17.735" starttime="20200629 12:58:15.589"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by `locator` as current frame.</doc>
+<arguments>
+<arg>id=iframe-015</arg>
+</arguments>
+<msg timestamp="20200629 12:58:17.738" level="INFO">Selecting frame 'id=iframe-015'.</msg>
+<status status="PASS" endtime="20200629 12:58:17.869" starttime="20200629 12:58:17.737"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200629 12:58:21.872" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20200629 12:58:21.872" starttime="20200629 12:58:17.870"></status>
+</kw>
+<kw name="Select From List" library="SeleniumLibrary">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>id=FromCity</arg>
+</arguments>
+<msg timestamp="20200629 12:58:21.872" level="INFO">Selecting all options from list 'id=FromCity'.</msg>
+<status status="PASS" endtime="20200629 12:58:22.256" starttime="20200629 12:58:21.872"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200629 12:58:26.258" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20200629 12:58:26.258" starttime="20200629 12:58:22.257"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>css=input[name=FirstName]</arg>
+<arg>SeleniumFName</arg>
+</arguments>
+<msg timestamp="20200629 12:58:26.261" level="INFO">Typing text 'SeleniumFName' into text field 'css=input[name=FirstName]'</msg>
+<status status="PASS" endtime="20200629 12:58:26.621" starttime="20200629 12:58:26.260"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200629 12:58:30.622" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20200629 12:58:30.622" starttime="20200629 12:58:26.621"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200629 12:58:32.965" starttime="20200629 12:58:30.623"></status>
+</kw>
+<kw>
+<assign>
+<var>${/}</var>
+</assign>
+<msg timestamp="20200629 12:58:32.968" level="FAIL">Keyword name cannot be empty.</msg>
+<status status="FAIL" endtime="20200629 12:58:32.968" starttime="20200629 12:58:32.968"></status>
+</kw>
+<status status="FAIL" endtime="20200629 12:58:32.969" critical="yes" starttime="20200629 12:58:08.704">Keyword name cannot be empty.</status>
+</test>
+<test id="s1-t2" name="TC_FlightApplication">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200629 12:58:32.984" level="INFO">Opening browser 'Chrome' to base url 'https://ngendigital.com/demo-application'</msg>
+<status status="PASS" endtime="20200629 12:58:44.983" starttime="20200629 12:58:32.984"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200629 12:58:47.202" starttime="20200629 12:58:44.984"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by `locator` as current frame.</doc>
+<arguments>
+<arg>id=iframe-015</arg>
+</arguments>
+<msg timestamp="20200629 12:58:47.203" level="INFO">Selecting frame 'id=iframe-015'.</msg>
+<status status="PASS" endtime="20200629 12:58:47.413" starttime="20200629 12:58:47.202"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200629 12:58:51.415" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20200629 12:58:51.415" starttime="20200629 12:58:47.414"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>1 min</arg>
+<arg>5 sec</arg>
+<arg>login to Flight Application</arg>
+<arg>support@ngendigital.com</arg>
+<arg>abc123</arg>
+</arguments>
+<kw name="login to Flight Application" library="flightResources">
+<arguments>
+<arg>support@ngendigital.com</arg>
+<arg>abc123</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//input[@name='email']</arg>
+<arg>${flight_usrName}</arg>
+</arguments>
+<msg timestamp="20200629 12:58:51.419" level="INFO">Typing text 'support@ngendigital.com' into text field 'xpath=//input[@name='email']'</msg>
+<status status="PASS" endtime="20200629 12:58:51.848" starttime="20200629 12:58:51.418"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//input[@name='passwd']</arg>
+<arg>${flight_Password}</arg>
+</arguments>
+<msg timestamp="20200629 12:58:51.849" level="INFO">Typing text 'abc123' into text field 'xpath=//input[@name='passwd']'</msg>
+<status status="PASS" endtime="20200629 12:58:52.028" starttime="20200629 12:58:51.849"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@class='btn']</arg>
+</arguments>
+<msg timestamp="20200629 12:58:52.029" level="INFO">Clicking element 'xpath=//div[@class='btn']'.</msg>
+<status status="PASS" endtime="20200629 12:58:53.575" starttime="20200629 12:58:52.029"></status>
+</kw>
+<status status="PASS" endtime="20200629 12:58:53.575" starttime="20200629 12:58:51.417"></status>
+</kw>
+<status status="PASS" endtime="20200629 12:58:53.575" starttime="20200629 12:58:51.416"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Fly with peace...</arg>
+</arguments>
+<msg timestamp="20200629 12:58:54.950" level="INFO">Current page contains text 'Fly with peace...'.</msg>
+<status status="PASS" endtime="20200629 12:58:54.951" starttime="20200629 12:58:53.583"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>${getPeace}</arg>
+</arguments>
+<assign>
+<var>${error_Flight}</var>
+</assign>
+<msg timestamp="20200629 12:58:55.050" level="INFO">${error_Flight} = Fly with peace...</msg>
+<status status="PASS" endtime="20200629 12:58:55.050" starttime="20200629 12:58:54.952"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${error_Flight}</arg>
+</arguments>
+<status status="PASS" endtime="20200629 12:58:55.054" starttime="20200629 12:58:55.053"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" endtime="20200629 12:58:55.057" starttime="20200629 12:58:55.056"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200629 12:58:57.890" starttime="20200629 12:58:55.059"></status>
+</kw>
+<status status="PASS" endtime="20200629 12:58:57.893" critical="yes" starttime="20200629 12:58:32.982"></status>
+</test>
+<status status="FAIL" endtime="20200629 12:58:57.913" starttime="20200629 12:58:08.114"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="DemoSuiteNew" pass="1">DemoSuiteNew</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200629 12:58:08.686" level="ERROR">Error in file 'E:\Robot Framework\New_Demo_Project\NewProject\DemoSuiteNew.robot' on line 9: Importing test library 'Faker' failed: ImportError: No module named Faker
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python27\Scripts\robot.exe
+  C:\WINDOWS\SYSTEM32\python27.zip
+  C:\Python27\DLLs
+  C:\Python27\lib
+  C:\Python27\lib\plat-win
+  C:\Python27\lib\lib-tk
+  C:\Python27
+  C:\Python27\lib\site-packages
+  C:\Python27\lib\site-packages\win32
+  C:\Python27\lib\site-packages\win32\lib
+  C:\Python27\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20200629 12:58:08.691" level="ERROR">Error in file 'E:\Robot Framework\New_Demo_Project\NewProject\DemoSuiteNew.robot' on line 10: Importing test library 'Faker' failed: ImportError: No module named Faker
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python27\Scripts\robot.exe
+  C:\WINDOWS\SYSTEM32\python27.zip
+  C:\Python27\DLLs
+  C:\Python27\lib
+  C:\Python27\lib\plat-win
+  C:\Python27\lib\lib-tk
+  C:\Python27
+  C:\Python27\lib\site-packages
+  C:\Python27\lib\site-packages\win32
+  C:\Python27\lib\site-packages\win32\lib
+  C:\Python27\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>

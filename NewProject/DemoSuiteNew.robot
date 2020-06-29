@@ -26,7 +26,6 @@ TC_01
     Input Text    css=input[name=FirstName]    SeleniumFName
     Sleep    4
     Close Browser
-    ${/}
 
 TC_02_AXpath
     Open Browser    https://ngendigital.com/practice    Chrome
@@ -37,9 +36,6 @@ TC_02_AXpath
     Sleep    4
     Input Text    css=input[name=FirstName]    SeleniumFName
     Sleep    4
-    Table Cell Should Contain
-    Table Cell Should Contain
-    ${/}
     [Teardown]    Close Browser
 
 TC_FlightApplication
@@ -58,4 +54,3 @@ testString
     ${random}    Generate Random String    80    [UPPER]
     Log To Console    ${random}
     Log    ${getPeace}
-        ${KEYWORD_MESSAGE}
